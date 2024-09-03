@@ -1,6 +1,7 @@
 package com.basicprogram.service
 
 import com.basicprogram.entity.User
+import com.basicprogram.entity.UserRequest
 import io.micronaut.configuration.kafka.annotation.KafkaClient
 import io.micronaut.configuration.kafka.annotation.Topic
 
@@ -8,6 +9,6 @@ import io.micronaut.configuration.kafka.annotation.Topic
 interface MessageProducer {
 
     @Topic("sri-topic")
-    def sendMessage(def map)
+    def sendMessage(def user)
 
 }
